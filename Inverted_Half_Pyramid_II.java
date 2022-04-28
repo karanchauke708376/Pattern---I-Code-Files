@@ -1,0 +1,34 @@
+package Pattern;
+import java.util.Scanner;
+
+public class Inverted_Half_Pyramid_II {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter The Pattern Print : ");
+		
+		int n = sc.nextInt();
+		
+		// Outer Loop Rows Print
+		for(int i = 1; i <= n; i++) {
+			
+			 // Inner Loop Space Print
+			for(int j = 1; j <= n-i; j++) {
+				
+				System.out.print(" ");
+			}
+		
+				// Inner Loop Print Star * 
+				for(int j = 1; j <= i; j++) {
+					
+					System.out.print("*");
+				}
+				
+				System.out.println();
+		}
+		
+	}
+
+}
